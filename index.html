@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo"></div>
+			<div class="published-in">
+				<div class="published-in-left">
+					<img src="https://d262ilb51hltx0.cloudfront.net/fit/c/32/32/1*bs9PbxDndAW7mmqve3EQ-w.jpeg" />
+				</div>
+				<div class="published-in-right">
+					<p class="uppercase small-font">Published in</p>
+					<p class="strong small-font">React Tutorials</p>
+				</div>
+			</div>
+			<div class="credentials">
+					<div class="circle-button searchbar"></div>
+					<div class="green-button login small-font">Sign in / Sign up</div>
+			</div>
+		</header>
+		<div class="slider">
+			<img src="images/slider.jpeg" />
+		</div>
+		<div class="wrapper">
+			<div class="main">
+				<div class="content">
+					<h1>React Components</h1>
+					<p>Components are the smallest, yet most fundamental part of React. They’re similar, in concepts, to things like widgets and modules. React defines itself as a <span class="italic">library for building user interfaces</span>. As such, when you think of a user interface you want to build (with React), you need to think of it in terms of the smallest possible components that you can define.</p>
+					<p>These components include code which defines how DOM elements are created and how users can interact with them. Components can be defined purely in JavaScript or they can be defined in a superset (or extended variation) of JavaScript called JSX. If you decide to use JSX for your component definitions, you may also need a compiler application, but we’ll get to that in a minute.</p>
+						<div class="footnotes italic">
+							<p>We’re going to be referring to <span class="strong">pure JavaScript</span> as <span class="strong">JS</span> and <span class="strong">the React version of JavaScript</span> as <span class="strong">JSX</span>.</p>
+							<p>You can find the accompanying source-code, for this tutorial, at: <span class="strong">https://github.com/formativ/tutorial-react-components.</span></p>
+						</div>
+						<h2>Components</h2>
+						<p>Hopefully you’re willing to try this whole embedded HTML thing. In case not, I will create JS examples along with the JSX examples in this tutorial Let’s look at a simple component, just to get a feel for how one defines them:</p>
+							<div class="code-example">
+								<code>
+								/**
+								 * @jsx React.DOM
+								 */
+								<br>  
+								var HelloWorld = React.createClass({
+								  render : function() {
+								    return <div>hello world!</div>;
+								  }
+								});
+								<br>
+								React.renderComponent(
+								  <HelloWorld />,
+								  document.body
+								);
+								</code>
+							</div>
+				</div>
+					<div class="sharing">
+						<div class="sharing-left">
+							<div class="green-button recommend"><span class="heart">&#9825;</span>Recommend</div>
+							<p>Whitney Woolstenhulme and 36 others recommended</p>
+						</div>
+						<div class="sharing-right">
+							<div class="sharing-action">
+								<div class="circle-button"></div><p class="small-font">Bookmark</p>
+							</div>
+							<div class="sharing-action">
+								<div class="circle-button"></div><p class="small-font">Share</p>
+							</div>
+							<div class="sharing-action">
+								<div class="circle-button"></div><p class="small-font">More</p>
+							</div>
+						</div>
+					</div>
+				<div class="resources">
+					<div class="resources-half resources-left">
+						<div class="resources-left-image"><img src="https://d262ilb51hltx0.cloudfront.net/fit/c/60/60/1*bs9PbxDndAW7mmqve3EQ-w.jpeg" />
+						<div class="resources-info">
+							<h3>React Tutorials</h3>
+							<p class="small-font">A series of quick tutorials on React.</p>
+						</div>
+						<div class="resources-button green-button small-font">Follow
+						</div>
+						</div>
+					</div>
+					<div class="resources-half resources-right">
+						<div class="resources-left-image"><img class="circular" src="https://d262ilb51hltx0.cloudfront.net/fit/c/60/60/1*oZu4yGg3LiS4YBe_HnOKew.jpeg" />
+						<div class="resources-info">
+							<h3>Christopher Pitt</h3>
+							<p class="small-font">Programming, Robotics, Minecraft</p>
+						</div>
+						<div class="resources-button green-button small-font">Follow
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="full-width">
+			<div class="wrapper">
+					<p class="next-story small-font"><span class="strong">Next Story</span> From Your <span class="strong">Reading List</span></p>
+				<div class="footer-meta">
+					<div class="footer-left">
+						<h3>React + Backbone + RequireJS</h3>
+						<p>Last time we looked at how to use React to render views in combination with the Backbone router.</p>
+						<div class="published-in">
+							<div class="published-in-left">
+								<img src="https://d262ilb51hltx0.cloudfront.net/fit/c/32/32/1*bs9PbxDndAW7mmqve3EQ-w.jpeg" />
+							</div>
+							<div class="published-in-right small-font">
+								In React Tutorials by Christopher Pitt<br>
+								<span class="strong">Jan 31, 2014  4 min read</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer-right">
+						<img src="https://d262ilb51hltx0.cloudfront.net/fit/c/140/120/1*bs9PbxDndAW7mmqve3EQ-w.jpeg" />
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
